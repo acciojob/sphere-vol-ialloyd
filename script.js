@@ -9,4 +9,9 @@ function volume_sphere() {
   
 } 
 
+document.getElementById('submit').addEventListener('click', (event)=> {
+    event.preventDefault();
+    volume_sphere();
+});
+
 window.onload = document.getElementById('MyForm').onsubmit = volume_sphere;
